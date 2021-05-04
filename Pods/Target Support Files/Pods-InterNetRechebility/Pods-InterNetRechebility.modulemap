@@ -1,0 +1,6 @@
+framework module Pods_InterNetRechebility {
+  umbrella header "Pods-InterNetRechebility-umbrella.h"
+
+  export *
+  module * { export * }
+}

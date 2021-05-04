@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="InterNetRechebility" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dashbord" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZT-EC-P2i">
+                                <rect key="frame" x="93" y="414" width="228" height="68.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.13171973819999999" green="0.24850571160000001" blue="0.55336713790000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hZT-EC-P2i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0vj-Rb-aOs"/>
+                            <constraint firstItem="hZT-EC-P2i" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iCp-vA-uM8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="05v-Y6-CxC" kind="show" id="5AO-JC-5Q3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="129" y="69"/>
+        </scene>
+        <!--Network Error View Controller-->
+        <scene sceneID="v5t-Za-AnH">
+            <objects>
+                <viewController storyboardIdentifier="NetworkErrorViewController" id="05v-Y6-CxC" customClass="NetworkErrorViewController" customModule="InterNetRechebility" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WLL-HD-fd9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bND-o7-W4R" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="41.5" y="252.5" width="331" height="337"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opps!..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpd-La-jD5">
+                                <rect key="frame" x="41.5" y="604.5" width="130.5" height="48"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="IRQ-Ms-dcY">
+                                <rect key="frame" x="41.5" y="667.5" width="249" height="63"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Somthing wrong with your" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10F-JN-ln9">
+                                        <rect key="frame" x="0.0" y="0.0" width="229" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connection,please try again." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKA-kP-nzf">
+                                        <rect key="frame" x="0.0" y="39" width="249" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RCm-19-MTJ"/>
+                        <color key="backgroundColor" systemColor="linkColor"/>
+                        <constraints>
+                            <constraint firstItem="bND-o7-W4R" firstAttribute="width" secondItem="WLL-HD-fd9" secondAttribute="width" multiplier="0.799517" id="1WY-Hk-b9q"/>
+                            <constraint firstItem="hpd-La-jD5" firstAttribute="top" secondItem="bND-o7-W4R" secondAttribute="bottom" constant="15" id="9xW-ea-1Hq"/>
+                            <constraint firstItem="hpd-La-jD5" firstAttribute="leading" secondItem="bND-o7-W4R" secondAttribute="leading" id="FhF-rc-qjJ"/>
+                            <constraint firstItem="bND-o7-W4R" firstAttribute="height" secondItem="WLL-HD-fd9" secondAttribute="height" multiplier="0.4" id="TAN-Ht-xzZ"/>
+                            <constraint firstItem="bND-o7-W4R" firstAttribute="centerX" secondItem="WLL-HD-fd9" secondAttribute="centerX" id="VeB-BB-lhu"/>
+                            <constraint firstItem="IRQ-Ms-dcY" firstAttribute="top" secondItem="hpd-La-jD5" secondAttribute="bottom" constant="15" id="nF7-zr-DVZ"/>
+                            <constraint firstItem="IRQ-Ms-dcY" firstAttribute="leading" secondItem="bND-o7-W4R" secondAttribute="leading" id="u19-x6-XSP"/>
+                            <constraint firstItem="bND-o7-W4R" firstAttribute="centerY" secondItem="WLL-HD-fd9" secondAttribute="centerY" id="xVX-jT-9QX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="NOA-n7-eIv"/>
+                    <connections>
+                        <outlet property="animationView" destination="bND-o7-W4R" id="NeL-kr-SiI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P2i-Mg-rhw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="862" y="69"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="bND-o7-W4R"/>
+    </designables>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
